@@ -594,6 +594,10 @@ namespace XIVComboPlugin
             if (Configuration.ComboPresets.HasFlag(CustomComboPreset.MachinistMainCombo))
                 if (actionID == MCH.CleanShot || actionID == MCH.HeatedCleanShot)
                 {
+                    var gauge = clientState.JobGauges.Get<MCHGauge>();
+                    if (gauge.IsOverheated() && level >= 35) {
+                        return MCH.HeatBlast;
+                    }
                     if (comboTime > 0)
                     {
                         if (lastMove == MCH.SplitShot)
