@@ -102,7 +102,7 @@ namespace XIVComboPlugin
         GunbreakerDemonSlaughterCombo = 1L << 22,
 
         // MACHINIST
-        [CustomComboInfo("(Heated) Shot Combo", "Replace either form of Clean Shot with its combo chain", 31, new uint[] { MCH.HeatedCleanShot, MCH.CleanShot })]
+        [CustomComboInfo("(Heated) Shot Combo", "Replace either form of Clean Shot with its combo chain lolol", 31, new uint[] { MCH.HeatedCleanShot, MCH.CleanShot })]
         MachinistMainCombo = 1L << 23,
 
         [CustomComboInfo("Spread Shot Heat", "Replace Spread Shot with Auto Crossbow when overheated", 31, new uint[] { MCH.SpreadShot })]
